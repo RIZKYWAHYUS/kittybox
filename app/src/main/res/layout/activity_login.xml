@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.coinque.Login"
+    android:background="@drawable/splash"
+    android:padding="40dp"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logokittybox"
+
+        android:id="@+id/imageView3"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logokepala"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button_login" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:layout_above="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_input"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:padding="10dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_alignBottom="@+id/button_login"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bg_input"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:padding="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="Masuk"
+        android:background="@drawable/btnmasuk"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp" />
+</RelativeLayout>

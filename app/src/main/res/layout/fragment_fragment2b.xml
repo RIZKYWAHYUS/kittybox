@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.user.coinque.fragment2b">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan nominal targetmu"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp" />
+
+        <EditText
+            android:id="@+id/et_target"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bginput1"
+            android:hint="Masukkan Targetmu"
+            android:inputType="number"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_masukkan_targethari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_target"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Masukkan waktu pencapaian target"
+            />
+
+<EditText
+    android:id="@+id/et_target_hari"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bginput1"
+    android:hint="Masukkan Target Harimu"
+    android:inputType="number"
+    android:padding="10dp"
+    android:layout_below="@id/tv_masukkan_targethari"
+    />
+
+
+        <Button
+            android:id="@+id/btn_pasang_target"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Pasang"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/et_target_hari"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>
